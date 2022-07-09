@@ -36,7 +36,7 @@ li{
     padding: 0 20px;
 }
 li a{
-    /* border-bottom: 4px solid var(--primary); */
+    /* border-bottom: 5px solid var(--primary); */
     text-decoration: none;
     position: relative;
     color: #fff;
@@ -154,6 +154,7 @@ img{
     margin: 100px auto 0;
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
     
 }
 .about div:first-child{
@@ -170,8 +171,30 @@ img{
     bottom: 0;left: 0;
     height: 2px;
     width: 10%;
-    border-bottom: 4px solid var(--primary);
+    border-bottom: 5px solid var(--primary);
 }
 .about p{
     padding-right: 30px;
+}
+.products{
+    margin: 50px auto;
+    width: 80vw;
+}
+.products .headline {
+    text-align: center;
+}
+.headline h2{
+    padding: 10px 0;
+    position: relative;
+    margin-bottom: 20px;
+}
+.headline h2::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 5%;
+    margin-left: 46%;
+    border-bottom: 5px solid var(--primary);
 }
