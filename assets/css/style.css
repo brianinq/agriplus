@@ -23,8 +23,9 @@ nav{
     text-align: center;
     align-items: center;
 }
-nav .banner{
+.banner{
     font-size: 2.5rem;
+    cursor: pointer;
     font-family: 'Inter', sans-serif ;
 }
 nav ul{
@@ -347,6 +348,7 @@ img{
     margin-top: 20px;
 }
 .form button{
+    padding: 0 30px;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 1.1rem;
@@ -360,4 +362,83 @@ input{
 input::placeholder{
     color: #000;
     font-weight: 500;
+}
+footer{
+    width: 100vw;
+    background: #000;
+    color: #fff;
+}
+.stores{
+    display: flex;
+    width: 200px;
+    background-clip: content-box;
+}
+
+.stores img{
+    padding: 2px;
+    max-width: 80%;
+    border-radius: 10px;
+    cursor: pointer;
+    background-clip: content-box;
+}
+.stores img:first-child{
+    background: #fff;
+    margin-right: 20px;
+}
+.footer{
+    width: 90vw;
+    height: 50vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.right{
+    display: flex;
+    justify-content: space-between;
+}
+.right ul li{
+    list-style: none;
+    padding: 5px 0;
+    padding-left: 0;
+    cursor: pointer;
+    position: relative;
+    list-style-position: inside;
+}
+.right ul li::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    transform: scaleX(0);
+    left: 0;
+    height: 2px;
+    width: 40%;
+    border-bottom: 3px solid var(--primary);
+    transition: transform 0.1s ease-in;
+}
+.right ul li:hover:after{
+    transform: scaleX(1);
+}
+.right .links{
+    margin: 0 30px;
+}
+.left p{
+    padding: 10px 0;
+}
+.socials{
+    margin: 10px 0;
+}
+.stores {
+    padding-top: 20px;
+}
+footer > h4{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.socials .fa-brands{
+    color: #000;
+    cursor: pointer;
+    padding: 8px;
+    background: #fff;
+    border-radius: 50%;
 }
