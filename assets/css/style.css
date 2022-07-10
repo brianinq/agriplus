@@ -322,3 +322,42 @@ img{
 .fa-star{
     padding: 3px;
 }
+.call2action{
+    width: 100vw;
+    background: #000;
+    margin-top: 30px;
+    height: 30vh;
+    display: flex;
+    justify-content: center;align-items: center;
+    margin-bottom: 5px;
+}
+.contact{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.contact h4{
+    padding: 10px;
+    font-size: 1.3rem;
+}
+.form{
+    margin-top: 20px;
+}
+.form button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.1rem;
+    margin-left: 0;
+}
+input{
+    padding: 10px 20px;
+    color: #000;
+    font-size: 1rem;
+}
+input::placeholder{
+    color: #000;
+    font-weight: 500;
+}
